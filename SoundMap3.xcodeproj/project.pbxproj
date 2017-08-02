@@ -7,21 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		245C1AB61F2D23460093A4B1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245C1AB51F2D23460093A4B1 /* Constants.swift */; };
+		245EDD221F3002F700C1D558 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245EDD211F3002F700C1D558 /* LocationManager.swift */; };
+		24954F2D1F31817F00B8C681 /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24954F2C1F31817F00B8C681 /* CustomAnnotationView.swift */; };
 		24B56C681F2D219200F44114 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B56C671F2D219200F44114 /* AppDelegate.swift */; };
-		24B56C6A1F2D219200F44114 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B56C691F2D219200F44114 /* ViewController.swift */; };
-		24B56C6D1F2D219200F44114 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24B56C6B1F2D219200F44114 /* Main.storyboard */; };
 		24B56C6F1F2D219200F44114 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24B56C6E1F2D219200F44114 /* Assets.xcassets */; };
 		24B56C721F2D219200F44114 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24B56C701F2D219200F44114 /* LaunchScreen.storyboard */; };
+		24CA38281F2D279F00F04B1E /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CA38271F2D279F00F04B1E /* CustomTabBarController.swift */; };
+		24CA382A1F2D287200F04B1E /* DataCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CA38291F2D287200F04B1E /* DataCollectionViewController.swift */; };
+		24CA382C1F2D2BDC00F04B1E /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CA382B1F2D2BDC00F04B1E /* FeedCell.swift */; };
+		24CA382F1F2E83D400F04B1E /* RecordingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CA382E1F2E83D400F04B1E /* RecordingController.swift */; };
+		24CA38311F2E86E500F04B1E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CA38301F2E86E500F04B1E /* MapViewController.swift */; };
+		24CA38341F2E893000F04B1E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24CA38331F2E893000F04B1E /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		24B56C641F2D219200F44114 /* SoundMap3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundMap3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		245C1AB51F2D23460093A4B1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		245EDD211F3002F700C1D558 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		24954F2C1F31817F00B8C681 /* CustomAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
+		24B56C641F2D219200F44114 /* Buckeye Sound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Buckeye Sound.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B56C671F2D219200F44114 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		24B56C691F2D219200F44114 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		24B56C6C1F2D219200F44114 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24B56C6E1F2D219200F44114 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24B56C711F2D219200F44114 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24B56C731F2D219200F44114 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24CA38271F2D279F00F04B1E /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		24CA38291F2D287200F04B1E /* DataCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCollectionViewController.swift; sourceTree = "<group>"; };
+		24CA382B1F2D2BDC00F04B1E /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		24CA382E1F2E83D400F04B1E /* RecordingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingController.swift; sourceTree = "<group>"; };
+		24CA38301F2E86E500F04B1E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		24CA38331F2E893000F04B1E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24CA38341F2E893000F04B1E /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,15 +53,19 @@
 		24B56C5B1F2D219200F44114 = {
 			isa = PBXGroup;
 			children = (
+				24B56C7B1F2D21C900F44114 /* Views */,
+				24B56C7A1F2D21C200F44114 /* Model */,
+				24B56C791F2D21BB00F44114 /* Controllers */,
 				24B56C661F2D219200F44114 /* SoundMap3 */,
 				24B56C651F2D219200F44114 /* Products */,
+				24CA38321F2E893000F04B1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		24B56C651F2D219200F44114 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				24B56C641F2D219200F44114 /* SoundMap3.app */,
+				24B56C641F2D219200F44114 /* Buckeye Sound.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,13 +74,48 @@
 			isa = PBXGroup;
 			children = (
 				24B56C671F2D219200F44114 /* AppDelegate.swift */,
-				24B56C691F2D219200F44114 /* ViewController.swift */,
-				24B56C6B1F2D219200F44114 /* Main.storyboard */,
 				24B56C6E1F2D219200F44114 /* Assets.xcassets */,
 				24B56C701F2D219200F44114 /* LaunchScreen.storyboard */,
 				24B56C731F2D219200F44114 /* Info.plist */,
 			);
 			path = SoundMap3;
+			sourceTree = "<group>";
+		};
+		24B56C791F2D21BB00F44114 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				24CA38271F2D279F00F04B1E /* CustomTabBarController.swift */,
+				24CA38291F2D287200F04B1E /* DataCollectionViewController.swift */,
+				24CA382E1F2E83D400F04B1E /* RecordingController.swift */,
+				24CA38301F2E86E500F04B1E /* MapViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		24B56C7A1F2D21C200F44114 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				245C1AB51F2D23460093A4B1 /* Constants.swift */,
+				245EDD211F3002F700C1D558 /* LocationManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		24B56C7B1F2D21C900F44114 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				24CA382B1F2D2BDC00F04B1E /* FeedCell.swift */,
+				24954F2C1F31817F00B8C681 /* CustomAnnotationView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		24CA38321F2E893000F04B1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24CA38331F2E893000F04B1E /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,7 +135,7 @@
 			);
 			name = SoundMap3;
 			productName = SoundMap3;
-			productReference = 24B56C641F2D219200F44114 /* SoundMap3.app */;
+			productReference = 24B56C641F2D219200F44114 /* Buckeye Sound.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -98,6 +152,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 8SR3MG6VY6;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -126,7 +185,6 @@
 			files = (
 				24B56C721F2D219200F44114 /* LaunchScreen.storyboard in Resources */,
 				24B56C6F1F2D219200F44114 /* Assets.xcassets in Resources */,
-				24B56C6D1F2D219200F44114 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,22 +195,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24B56C6A1F2D219200F44114 /* ViewController.swift in Sources */,
 				24B56C681F2D219200F44114 /* AppDelegate.swift in Sources */,
+				24CA382C1F2D2BDC00F04B1E /* FeedCell.swift in Sources */,
+				245EDD221F3002F700C1D558 /* LocationManager.swift in Sources */,
+				24CA382A1F2D287200F04B1E /* DataCollectionViewController.swift in Sources */,
+				245C1AB61F2D23460093A4B1 /* Constants.swift in Sources */,
+				24CA38281F2D279F00F04B1E /* CustomTabBarController.swift in Sources */,
+				24CA382F1F2E83D400F04B1E /* RecordingController.swift in Sources */,
+				24954F2D1F31817F00B8C681 /* CustomAnnotationView.swift in Sources */,
+				24CA38311F2E86E500F04B1E /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		24B56C6B1F2D219200F44114 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				24B56C6C1F2D219200F44114 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		24B56C701F2D219200F44114 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -267,7 +324,7 @@
 				INFOPLIST_FILE = SoundMap3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jared.SoundMap3;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Buckeye Sound";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -280,7 +337,7 @@
 				INFOPLIST_FILE = SoundMap3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jared.SoundMap3;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Buckeye Sound";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,6 +361,7 @@
 				24B56C781F2D219200F44114 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
