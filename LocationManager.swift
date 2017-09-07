@@ -13,22 +13,24 @@ class LocationManager: NSObject,CLLocationManagerDelegate {
     
     
     private var locationManager: CLLocationManager?
-    private var centerLocation: MKCoordinateRegion?
+    var centerLocation: MKCoordinateRegion?
     private var authStatus: CLAuthorizationStatus?
-    private var currentLocation: CLLocation?
-    public static var sharedInstace = LocationManager()
+    var currentLocation: CLLocation?
+    static let sharedInstance = LocationManager()
     
-    override init() {
-        super.init()
+    func setup() {
+        
         
         self.locationManager = CLLocationManager()
-        self.requestAuth(manager: self.locationManager!)
+        self.setupLocationManager()
+        self.requestAuth()
         
         
     }
     
-    func requestAuth(manager: CLLocationManager)  {
-        manager.requestWhenInUseAuthorization()
+    func requestAuth()  {
+        self.locationManager?.requestWhenInUseAuthorization()
+        self.locationManager?.startUpdatingLocation()
         
     }
     
@@ -48,20 +50,9 @@ class LocationManager: NSObject,CLLocationManagerDelegate {
         
         self.locationManager?.desiredAccuracy = kCLLocationAccuracyBest
         self.locationManager?.delegate = self
-        self.locationManager?.startUpdatingLocation()
     }
     
-    func makeRegion(center: CLLocationCoordinate2D) -> MKCoordinateRegion{
-        
-        let region = MKCoordinateRegionMakeWithDistance(center, 30000, 30000)
-        
-        return region
-    }
-    
-    func setMapCenter(longitude: Double, latitude: Double) {
-        let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-        self.centerLocation = makeRegion(center: coordinate)
-    }
+  
     
     func getCenter() -> MKCoordinateRegion {
         return self.centerLocation!

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FirebaseManager.swift"
+            timestampString = "525292934.354041"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "getData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LocationManager.swift"
+            timestampString = "525278043.152667"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "requestAuth()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FirebaseManager.swift"
+            timestampString = "525279050.989958"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "getData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DeviceSelectionController.swift"
+            timestampString = "526357311.374515"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "DeviceSelectionController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Buckeye_Sound.DeviceSelectionController.__deallocating_deinit"
+                  moduleName = "Buckeye Sound"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaredwilliams/Library/Mobile%20Documents/com~apple~CloudDocs/Programming/Swift/SoundMap3/DeviceSelectionController.swift"
+                  timestampString = "526357312.55296"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Buckeye_Sound.DeviceSelectionController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Buckeye_Sound.DeviceSelectionController"
+                  moduleName = "Buckeye Sound"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaredwilliams/Library/Mobile%20Documents/com~apple~CloudDocs/Programming/Swift/SoundMap3/DeviceSelectionController.swift"
+                  timestampString = "526357312.556598"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "118">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Buckeye_Sound.DeviceSelectionController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Buckeye_Sound.DeviceSelectionController"
+                  moduleName = "Buckeye Sound"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaredwilliams/Library/Mobile%20Documents/com~apple~CloudDocs/Programming/Swift/SoundMap3/DeviceSelectionController.swift"
+                  timestampString = "526357312.558435"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Buckeye_Sound.DeviceSelectionController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Buckeye_Sound.DeviceSelectionController&gt;"
+                  moduleName = "Buckeye Sound"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaredwilliams/Library/Mobile%20Documents/com~apple~CloudDocs/Programming/Swift/SoundMap3/DeviceSelectionController.swift"
+                  timestampString = "526357312.559887"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Buckeye_Sound.DeviceSelectionController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Buckeye_Sound.DeviceSelectionController&gt;"
+                  moduleName = "Buckeye Sound"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaredwilliams/Library/Mobile%20Documents/com~apple~CloudDocs/Programming/Swift/SoundMap3/DeviceSelectionController.swift"
+                  timestampString = "526357312.561307"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "105">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

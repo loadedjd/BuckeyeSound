@@ -12,17 +12,27 @@ import MapKit
 class MapViewController: UIViewController, MKMapViewDelegate {
     
     var mapView: MKMapView?
-    let locationManager: LocationManager = LocationManager()
     var addButton: UIBarButtonItem?
     var centerButton: UIBarButtonItem?
+    var centerLocation: MKCoordinateRegion?
+    var firebaseManager: FirebaseManager?
+    var addedAnnotation: [MKPointAnnotation] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(self.addButtonPressed))
-        self.centerButton = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(self.centerMap))
+        self.centerButton = UIBarButtonItem(image: #imageLiteral(resourceName: "centerButton"), style: .plain, target: self, action: #selector(self.centerMap))
         
+        
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.addAnnotations), name: NSNotification.Name(rawValue: "reloadMap"), object: nil)
         setupView()
+        self.addAnnotations()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.addAnnotations()
     }
     
     func setupView() {
@@ -30,13 +40,16 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         addNavigationButton(barButton: self.centerButton!, side: .left)
         setupMapView()
         centerMap()
+        
+        
     }
     
     func setupMapView() {
         
         self.mapView = MKMapView(frame: self.view.frame)
         self.view.addSubview(self.mapView!)
-        self.locationManager.setMapCenter(longitude: -82.9988889 , latitude: 39.9611111 )
+        self.setMapCenter(longitude: -82.9988889 , latitude: 39.9611111 )
+        self.mapView?.showsUserLocation = true
         self.mapView?.delegate = self
         
         
@@ -49,7 +62,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     
     func centerMap() {
         
-        self.mapView?.setRegion(self.locationManager.getCenter(), animated: true)
+        self.mapView?.setRegion(self.centerLocation!, animated: true)
     }
     
     func addNavigationButton(barButton: UIBarButtonItem, side: Sides) {
@@ -67,12 +80,70 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         self.present(nav, animated: true, completion: nil)
     }
     
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        let reuseId = "pin"
+//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+//        let reuseId = "pin"
+//        
+//        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId)
+//        
+//        if annotationView == nil {
+//            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+//            annotationView?.canShowCallout = true
+//        }
+//        
+//        else {
+//            annotationView?.annotation = annotation
+//        }
+//        
+//        return annotationView
+//    }
+    
+    func makeRegion(center: CLLocationCoordinate2D) -> MKCoordinateRegion{
         
-        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId) as! CustomAnnotationView
+        let region = MKCoordinateRegionMakeWithDistance(center, 30000, 30000)
         
-        return annotationView
+        return region
+    }
+    
+    func setMapCenter(longitude: Double, latitude: Double) {
+        let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        self.centerLocation = makeRegion(center: coordinate)
+    }
+    
+    
+    func addAnnotations() {
+        
+        let entries = FirebaseManager.getAllData()
+        print("\(entries) wiley cyote")
+        
+      
+        
+        
+            let annotations = self.addedAnnotation
+            self.mapView?.removeAnnotations(annotations)
+           // print("removed")
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        for entry in entries {
+            let lat = CLLocationDegrees( entry["Lat"]!)
+            let long = CLLocationDegrees( entry["Long"]!)
+            
+            
+            
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = CLLocationCoordinate2DMake(lat!, long!)
+            annotation.title = "\(entry["Decibels"]!) DB"
+            self.addedAnnotation.append(annotation)
+            
+            self.mapView?.addAnnotation(annotation)
+        }
     }
 
 

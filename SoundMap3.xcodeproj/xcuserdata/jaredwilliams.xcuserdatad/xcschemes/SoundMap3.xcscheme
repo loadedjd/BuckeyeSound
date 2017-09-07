@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "24B56C631F2D219200F44114"
-               BuildableName = "SoundMap3.app"
+               BuildableName = "Buckeye Sound.app"
                BlueprintName = "SoundMap3"
                ReferencedContainer = "container:SoundMap3.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "24B56C631F2D219200F44114"
-            BuildableName = "SoundMap3.app"
+            BuildableName = "Buckeye Sound.app"
             BlueprintName = "SoundMap3"
             ReferencedContainer = "container:SoundMap3.xcodeproj">
          </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "24B56C631F2D219200F44114"
-            BuildableName = "SoundMap3.app"
+            BuildableName = "Buckeye Sound.app"
             BlueprintName = "SoundMap3"
             ReferencedContainer = "container:SoundMap3.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "24B56C631F2D219200F44114"
-            BuildableName = "SoundMap3.app"
+            BuildableName = "Buckeye Sound.app"
             BlueprintName = "SoundMap3"
             ReferencedContainer = "container:SoundMap3.xcodeproj">
          </BuildableReference>

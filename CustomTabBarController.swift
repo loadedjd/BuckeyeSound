@@ -21,13 +21,15 @@ class CustomTabBarController: UITabBarController {
         let dataView = DataCollectionViewController(collectionViewLayout: UICollectionViewFlowLayout())
         let dataNav = createNavigationController(color: Colors.navigationWhite, view: dataView, tabTitle: "Records", navTitle: "Records")
         
-        //let recordingNav = createNavigationController(color: Colors.navigationWhite, view: RecordingController(), tabTitle: "New Record", navTitle: "New Record")
-        
         let mapNav = createNavigationController(color: Colors.navigationWhite, view: MapViewController(), tabTitle: "Map", navTitle: "Map")
+        let image = UIImage(named: "location")
+        mapNav.tabBarItem.image = image
+       
+        let settingsNav = createNavigationController(color: Colors.navigationWhite, view: SettingsController(), tabTitle: "Settings", navTitle: "Settings")
+        settingsNav.tabBarItem.image = #imageLiteral(resourceName: "settingsLogo")
         
         
-        
-        viewControllers = [dataNav, mapNav]
+        viewControllers = [dataNav, mapNav, settingsNav]
         
     }
     

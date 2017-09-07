@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		242568D41F5867CC00C89C9C /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242568D31F5867CC00C89C9C /* SettingsCell.swift */; };
 		245C1AB61F2D23460093A4B1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245C1AB51F2D23460093A4B1 /* Constants.swift */; };
 		245EDD221F3002F700C1D558 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245EDD211F3002F700C1D558 /* LocationManager.swift */; };
+		24684DFA1F39041300D6A924 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24684DF91F39041300D6A924 /* Record.swift */; };
+		24684DFC1F39048000D6A924 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24684DFB1F39048000D6A924 /* FirebaseManager.swift */; };
+		24684DFE1F39139600D6A924 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24684DFD1F39139600D6A924 /* AudioManager.swift */; };
+		248EBF701F5E4200007626EA /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248EBF6F1F5E4200007626EA /* SettingsController.swift */; };
+		248EBF721F5E443C007626EA /* DeviceSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248EBF711F5E443C007626EA /* DeviceSelectionController.swift */; };
 		24954F2D1F31817F00B8C681 /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24954F2C1F31817F00B8C681 /* CustomAnnotationView.swift */; };
+		249947DF1F3290D700F1252C /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249947DE1F3290D700F1252C /* CustomAnnotation.swift */; };
 		24B56C681F2D219200F44114 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B56C671F2D219200F44114 /* AppDelegate.swift */; };
 		24B56C6F1F2D219200F44114 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24B56C6E1F2D219200F44114 /* Assets.xcassets */; };
 		24B56C721F2D219200F44114 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24B56C701F2D219200F44114 /* LaunchScreen.storyboard */; };
@@ -19,12 +26,21 @@
 		24CA382F1F2E83D400F04B1E /* RecordingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CA382E1F2E83D400F04B1E /* RecordingController.swift */; };
 		24CA38311F2E86E500F04B1E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CA38301F2E86E500F04B1E /* MapViewController.swift */; };
 		24CA38341F2E893000F04B1E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24CA38331F2E893000F04B1E /* MapKit.framework */; };
+		24E5D93A1F4C80850090EC7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24E5D9391F4C80850090EC7F /* GoogleService-Info.plist */; };
+		F1C4DB66FF95644352BB1E64 /* Pods_SoundMap3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ADB071898292716B9257C27 /* Pods_SoundMap3.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		242568D31F5867CC00C89C9C /* SettingsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		245C1AB51F2D23460093A4B1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		245EDD211F3002F700C1D558 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		24684DF91F39041300D6A924 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		24684DFB1F39048000D6A924 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		24684DFD1F39139600D6A924 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		248EBF6F1F5E4200007626EA /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		248EBF711F5E443C007626EA /* DeviceSelectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceSelectionController.swift; sourceTree = "<group>"; };
 		24954F2C1F31817F00B8C681 /* CustomAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
+		249947DE1F3290D700F1252C /* CustomAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		24B56C641F2D219200F44114 /* Buckeye Sound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Buckeye Sound.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B56C671F2D219200F44114 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24B56C6E1F2D219200F44114 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,6 +52,10 @@
 		24CA382E1F2E83D400F04B1E /* RecordingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingController.swift; sourceTree = "<group>"; };
 		24CA38301F2E86E500F04B1E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		24CA38331F2E893000F04B1E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		24E5D9391F4C80850090EC7F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8ADB071898292716B9257C27 /* Pods_SoundMap3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoundMap3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADFD90BF27BF006F47895E6B /* Pods-SoundMap3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundMap3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoundMap3/Pods-SoundMap3.debug.xcconfig"; sourceTree = "<group>"; };
+		BDADF0BA2267346264D47312 /* Pods-SoundMap3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundMap3.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoundMap3/Pods-SoundMap3.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +64,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24CA38341F2E893000F04B1E /* MapKit.framework in Frameworks */,
+				F1C4DB66FF95644352BB1E64 /* Pods_SoundMap3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +80,7 @@
 				24B56C661F2D219200F44114 /* SoundMap3 */,
 				24B56C651F2D219200F44114 /* Products */,
 				24CA38321F2E893000F04B1E /* Frameworks */,
+				EB7CAF66126B4FFD3B55AF3D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +97,7 @@
 			children = (
 				24B56C671F2D219200F44114 /* AppDelegate.swift */,
 				24B56C6E1F2D219200F44114 /* Assets.xcassets */,
+				24E5D9391F4C80850090EC7F /* GoogleService-Info.plist */,
 				24B56C701F2D219200F44114 /* LaunchScreen.storyboard */,
 				24B56C731F2D219200F44114 /* Info.plist */,
 			);
@@ -88,6 +111,8 @@
 				24CA38291F2D287200F04B1E /* DataCollectionViewController.swift */,
 				24CA382E1F2E83D400F04B1E /* RecordingController.swift */,
 				24CA38301F2E86E500F04B1E /* MapViewController.swift */,
+				248EBF6F1F5E4200007626EA /* SettingsController.swift */,
+				248EBF711F5E443C007626EA /* DeviceSelectionController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -97,6 +122,9 @@
 			children = (
 				245C1AB51F2D23460093A4B1 /* Constants.swift */,
 				245EDD211F3002F700C1D558 /* LocationManager.swift */,
+				24684DF91F39041300D6A924 /* Record.swift */,
+				24684DFB1F39048000D6A924 /* FirebaseManager.swift */,
+				24684DFD1F39139600D6A924 /* AudioManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -106,6 +134,8 @@
 			children = (
 				24CA382B1F2D2BDC00F04B1E /* FeedCell.swift */,
 				24954F2C1F31817F00B8C681 /* CustomAnnotationView.swift */,
+				249947DE1F3290D700F1252C /* CustomAnnotation.swift */,
+				242568D31F5867CC00C89C9C /* SettingsCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -114,8 +144,18 @@
 			isa = PBXGroup;
 			children = (
 				24CA38331F2E893000F04B1E /* MapKit.framework */,
+				8ADB071898292716B9257C27 /* Pods_SoundMap3.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB7CAF66126B4FFD3B55AF3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADFD90BF27BF006F47895E6B /* Pods-SoundMap3.debug.xcconfig */,
+				BDADF0BA2267346264D47312 /* Pods-SoundMap3.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24B56C761F2D219200F44114 /* Build configuration list for PBXNativeTarget "SoundMap3" */;
 			buildPhases = (
+				396C856CF5118C7E957CEBC3 /* [CP] Check Pods Manifest.lock */,
 				24B56C601F2D219200F44114 /* Sources */,
 				24B56C611F2D219200F44114 /* Frameworks */,
 				24B56C621F2D219200F44114 /* Resources */,
+				ABB949A8E2D4D051F7D53701 /* [CP] Embed Pods Frameworks */,
+				798BACD88BB20FAB67128601 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,25 +228,81 @@
 			files = (
 				24B56C721F2D219200F44114 /* LaunchScreen.storyboard in Resources */,
 				24B56C6F1F2D219200F44114 /* Assets.xcassets in Resources */,
+				24E5D93A1F4C80850090EC7F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		396C856CF5118C7E957CEBC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		798BACD88BB20FAB67128601 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoundMap3/Pods-SoundMap3-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABB949A8E2D4D051F7D53701 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoundMap3/Pods-SoundMap3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		24B56C601F2D219200F44114 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24684DFC1F39048000D6A924 /* FirebaseManager.swift in Sources */,
 				24B56C681F2D219200F44114 /* AppDelegate.swift in Sources */,
 				24CA382C1F2D2BDC00F04B1E /* FeedCell.swift in Sources */,
 				245EDD221F3002F700C1D558 /* LocationManager.swift in Sources */,
+				248EBF721F5E443C007626EA /* DeviceSelectionController.swift in Sources */,
 				24CA382A1F2D287200F04B1E /* DataCollectionViewController.swift in Sources */,
 				245C1AB61F2D23460093A4B1 /* Constants.swift in Sources */,
+				248EBF701F5E4200007626EA /* SettingsController.swift in Sources */,
 				24CA38281F2D279F00F04B1E /* CustomTabBarController.swift in Sources */,
+				24684DFA1F39041300D6A924 /* Record.swift in Sources */,
 				24CA382F1F2E83D400F04B1E /* RecordingController.swift in Sources */,
+				249947DF1F3290D700F1252C /* CustomAnnotation.swift in Sources */,
 				24954F2D1F31817F00B8C681 /* CustomAnnotationView.swift in Sources */,
 				24CA38311F2E86E500F04B1E /* MapViewController.swift in Sources */,
+				24684DFE1F39139600D6A924 /* AudioManager.swift in Sources */,
+				242568D41F5867CC00C89C9C /* SettingsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,27 +417,33 @@
 		};
 		24B56C771F2D219200F44114 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADFD90BF27BF006F47895E6B /* Pods-SoundMap3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8SR3MG6VY6;
 				INFOPLIST_FILE = SoundMap3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Jared.SoundMap3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SoundMap3.ios;
 				PRODUCT_NAME = "Buckeye Sound";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		24B56C781F2D219200F44114 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDADF0BA2267346264D47312 /* Pods-SoundMap3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8SR3MG6VY6;
 				INFOPLIST_FILE = SoundMap3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Jared.SoundMap3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SoundMap3.ios;
 				PRODUCT_NAME = "Buckeye Sound";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -15,6 +15,7 @@ class RecordingController: UIViewController {
     var latLabel: UILabel?
     var longLabel: UILabel?
     var recordButton: UIButton?
+    var audioController: AudioManager?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,13 @@ class RecordingController: UIViewController {
         self.doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(self.doneButtonPressed))
         
         setupView()
+        setupModelElements()
 
+    }
+    
+    func setupModelElements() {
+        self.audioController = AudioManager()
+        
     }
     
     
@@ -37,6 +44,7 @@ class RecordingController: UIViewController {
         self.view.addSubview(self.dbLabel!)
         self.view.addSubview(self.latLabel!)
         self.view.addSubview(self.longLabel!)
+        self.view.addSubview(self.recordButton!)
         
         self.setupConstraints()
     }
@@ -58,6 +66,15 @@ class RecordingController: UIViewController {
         self.longLabel?.translatesAutoresizingMaskIntoConstraints = false
         self.longLabel?.text = "long"
         
+        self.recordButton = UIButton()
+        self.recordButton?.addTarget(self, action: #selector(self.recordButtonPressed), for: .touchUpInside)
+        self.recordButton?.setTitle("Record", for: .normal)
+        self.recordButton?.translatesAutoresizingMaskIntoConstraints = false
+        self.recordButton?.setBackgroundImage(#imageLiteral(resourceName: "Rectangle"), for: .normal)
+        
+        
+        
+        
         
     }
     
@@ -65,11 +82,14 @@ class RecordingController: UIViewController {
         self.dbLabel?.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         self.dbLabel?.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
         
-//        self.latLabel?.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -8).isActive = true
-//        self.latLabel?.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 8).isActive = true
-//        
-//        self.longLabel?.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -8).isActive = true
-//        self.longLabel?.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -8).isActive = true
+        self.latLabel?.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -8).isActive = true
+        self.latLabel?.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 8).isActive = true
+        
+        self.longLabel?.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -8).isActive = true
+        self.longLabel?.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -8).isActive = true
+        
+        self.recordButton?.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+        self.recordButton?.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         
     }
     
@@ -85,6 +105,59 @@ class RecordingController: UIViewController {
     
     func doneButtonPressed() {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    func recordButtonPressed() {
+        self.audioController?.startRecording()
+        NotificationCenter.default.addObserver(self, selector: #selector(self.updateMeters), name: NSNotification.Name(rawValue: "updateAudio"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.doneRecording), name: NSNotification.Name(rawValue: "recordingDone"), object: nil)
+
+        self.doneButton?.isEnabled = false
+    }
+    
+    func updateMeters() {
+        guard let sample = self.audioController?.samples.last! else { return }
+        var color = UIColor.black
+        
+        if (sample + 100 < 60) {
+            color = UIColor.green
+        }
+        
+        if (sample + 100 >= 60 && sample < 80) {
+            color = UIColor.yellow
+        }
+        
+        if (sample + 100 > 80) {
+            color = UIColor.red
+        }
+        
+       
+        
+        self.dbLabel?.textColor = color
+        self.dbLabel?.text = "\(sample + 100) DB"
+    }
+    
+    func doneRecording() {
+        self.dismiss(animated: true, completion: nil)
+        self.doneButton?.isEnabled = true
+        
+        
+        let currentRecord = createRecord()
+        FirebaseManager.postData(record: currentRecord)
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "reloadMap"), object: nil)
+
+        
+    }
+    
+    func createRecord() -> Record{
+        let lat = Double((LocationManager.sharedInstance.currentLocation?.coordinate.latitude)!)
+        let long = Double((LocationManager.sharedInstance.currentLocation?.coordinate.longitude)!)
+        
+        
+        timeDate.updateDate() // Update time
+        let record = Record(decibel: (self.audioController?.logAverage)!, ilatitude: Float(lat), ilongitude: Float(long), itime: timeDate.timeStamp)
+        
+        return record
     }
 
 
